@@ -172,5 +172,25 @@
             }
         }
     </script>
+
+<script>
+    function toggleNavbar() {
+        var sidenav = document.getElementById("mySidenav");
+        if (sidenav.style.width === "250px") {
+            sidenav.style.width = "0";
+        } else {
+            sidenav.style.width = "250px";
+        }
+    }
+    
+    function toggleSubmenu() {
+        var submenu = document.getElementById("submenu");
+        submenu.style.display = (submenu.style.display === "none" || submenu.style.display === "") ? "block" : "none";
+    }
+
+    function closeNavbar() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 </body>
 </html>
