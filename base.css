@@ -12,16 +12,11 @@
   }
 
 
-  h3 {
-    font-weight: 200;
-    font-size: 24px;
-    color: #fff;
-  }
-
+ 
 
 body {
     font-family: Kanit;
-    background-color: #737373;
+    background-color: #f0f0f0;
     color: #333;
     line-height: 1.6;
     padding: 0;
@@ -132,10 +127,39 @@ footer {
 .btn-next:hover {
     background-color: #005bb5;
 }
+
+.btn-prev {
+    display: inline-block;
+    background-color: #0078D7;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-prev:hover {
+    background-color: #005bb5;
+}
+
+.button-content {
+    margin: 25px;      
+    text-align: center;
+
+    
+    
+}
 .main-content {
     background-color: #fff;
-    position: relative;
-    z-index: 1;
-    text-align: center;
+    
     margin-top: 100px;
+    margin: 25px;      
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #333;
 }
