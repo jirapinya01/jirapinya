@@ -15,21 +15,23 @@
 
     /* ปุ่ม */
     .btn-next {
-        display: inline-block;
-        background-color: #0078D7;
-        color: #fff;
-        padding: 10px 20px;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 5px;
-        text-align: center;
-        margin-top: 20px;
-        transition: background-color 0.3s ease;
-    }
+    display: inline-block;
+    background-color: #0078D7;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    float: right; /* ลอยปุ่มไปทางขวา */
+}
 
-    .btn-next:hover {
-        background-color: #005bb5;
-    }
+.btn-next:hover {
+    background-color: #005bb5;
+}
+
     </style>
 </head>
 <body>
@@ -64,7 +66,8 @@
         </a>
         
         <!-- ปุ่มไปหน้าถัดไป -->
-        <a href="2.html" class="btn-next">ไปหน้าถัดไป</a>
+        
     </div>
+    <a href="2.html" class="btn-next">ไปหน้าถัดไป</a>
 </body>
 </html>
