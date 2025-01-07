@@ -5,51 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
     <link rel="stylesheet" href="base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex; 
+            background-color: #f0f0f0;
+
+        }
+
+       
+
+        code {
+            background-color: #282c34;
+            color: #61dafb;
+            font-family: 'Fira Code', monospace;
+            font-size: 1.1rem;
+           margin: 15%;
+            width:70%;
+            height: 20%;
+            padding: 12px 16px;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        p{
+            margin-left: 25px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div>FuncPython</div>
-        
-    </header>
-    <div class="sidebar">
-        <a href="#">Dashboard</a>
-        <a href="#">Settings</a>
-        <a href="#">Messages</a>
+    <div class="navbar">
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+            &#9776;
+        </a>
     </div>
 
-    <div class="main-content">
-        <h1>1. ฟังก์ชันคืออะไร?</h1>
-        <a>
-            ฟังก์ชัน (Function) ใน Python คือกลุ่มของคำสั่งหรือโค้ดที่รวมตัวกันเพื่อทำงานเฉพาะเจาะจง การเขียนฟังก์ชันช่วยให้โค้ดมีความเป็นระเบียบ อ่านง่าย และสามารถนำกลับมาใช้ใหม่ได้ นอกจากนี้ ยังช่วยลดความซ้ำซ้อนในโค้ดและทำให้การดีบักหรือแก้ไขโค้ดทำได้ง่ายขึ้น
-            <br><br>
-            ฟังก์ชันใน Python มีสองรูปแบบหลัก:
-            <br><br>
-            ฟังก์ชันที่สร้างโดยผู้ใช้ - ผู้พัฒนาสามารถกำหนดฟังก์ชันเองได้เพื่อให้เหมาะสมกับความต้องการของโปรแกรม
-            <br><br>
-            ฟังก์ชันที่มีอยู่แล้วใน Python - เช่น print(), len(), range() เป็นต้น
-            <br><br>
-            ประโยชน์ของฟังก์ชัน
-            <br><br>
-            การใช้ซ้ำ (Reuse): สามารถเรียกใช้งานได้หลายครั้ง โดยไม่ต้องเขียนโค้ดเดิมซ้ำ
-            <br><br>
-            โครงสร้างชัดเจน: ช่วยจัดระเบียบโค้ดให้ดูง่ายขึ้น
-            <br><br>
-            ลดความซับซ้อน: ช่วยแยกส่วนการทำงานในโปรแกรมให้เป็นโมดูลเล็กๆ
-            <br><br>
-            เพิ่มความยืดหยุ่น: สามารถรับค่าที่แตกต่างกันและคืนค่าที่ต่างกันได้
-            <br><br>
-            ตัวอย่างในชีวิตจริง
-            <br><br>
-            การกดปุ่ม "ปริ้นเอกสาร" บนคอมพิวเตอร์ คือการเรียกใช้ฟังก์ชันที่ทำหน้าที่ปริ้นเอกสาร
-            <br><br>
-            การใช้แอปพลิเคชันสั่งอาหาร ฟังก์ชันจะถูกเรียกเพื่อคำนวณราคาอาหาร รวมภาษีและค่าจัดส่ง
-            <br><br>
-            ใน Python การสร้างและใช้งานฟังก์ชันเป็นพื้นฐานที่สำคัญสำหรับการเขียนโปรแกรมทั้งขนาดเล็กและใหญ่
+    
+    <div id="mySidenav" class="sidenav">
+        
+        <a href="javascript:void(0);" class="closebtn" onclick="closeNavbar()">
+            &times;
         </a>
+
+        <hr>
         
-        <a href="2.html" class="btn-next">ไปหน้าถัดไป</a>
-        
+    <div id="submenu" class="submenu">
+        <a href="index.html.html">หน้าแรก</a>
+        <a href="1.html">บทเรียนที่ 1</a>
+        <a href="2.html">บทเรียนที่ 2</a>
+        <a href="3.html">บทเรียนที่ 3</a>
+        <a href="4.html">บทเรียนที่ 4</a>
     </div>
+  
+    </div>
+    
+    <div class="main-content">
+        <h1>2. การสร้างฟังก์ชันใน Python</h1>
+      <a>การสร้างฟังก์ชันใน Python ใช้คำสั่ง def ซึ่งเป็นคีย์เวิร์ดสำหรับนิยามฟังก์ชัน โดยฟังก์ชันที่เราสร้างจะมีชื่อเรียกและสามารถรับพารามิเตอร์ (ข้อมูลที่ส่งเข้าไปในฟังก์ชัน) ได้ตามต้องการ</a>
+     <br><b>def</b><a> คีย์เวิร์ดที่ใช้เริ่มต้นการสร้างฟังก์ชัน</a>
+     <br><b>ชื่อฟังก์ชัน</b><a> ตั้งชื่อฟังก์ชันให้สื่อถึงการทำงาน (ใช้ตัวอักษรภาษาอังกฤษและ _ ได้)</a>
+        
+     <br> <b>พารามิเตอร์</b><a>   ตัวเลือก (optional) ใช้ส่งข้อมูลเข้าไปในฟังก์ชันเพื่อประมวลผล</a>
+        
+     <br><b>return</b><a> ใช้ส่งค่ากลับจากฟังก์ชัน (ถ้ามี)</a>
+    </div>
+    <code>def ชื่อฟังก์ชัน(พารามิเตอร์):
+        # คำสั่งในฟังก์ชัน
+        return ค่าที่จะส่งกลับ (ถ้ามี)</code>
+   <p>ตัวอย่างเช่น</p>
+  <code>def say_hello():
+    print("สวัสดี")</code>
+    <p>การเรียกใช้</p>
+    <code>say_hello()  # Output: สวัสดี</code>
+    <div class="button-content">
+    <a href="2.html" class="btn-prev">ย้อนกลับ</a>
+    <a href="4.html" class="btn-next">หน้าถัดไป</a>
    
+    </div>
+
+    <script>
+        function toggleNavbar() {
+            var sidenav = document.getElementById("mySidenav");
+            if (sidenav.style.width === "250px") {
+                sidenav.style.width = "0";
+            } else {
+                sidenav.style.width = "250px";
+            }
+        }
+        
+        function toggleSubmenu() {
+            var submenu = document.getElementById("submenu");
+            submenu.style.display = (submenu.style.display === "none" || submenu.style.display === "") ? "block" : "none";
+        }
+
+        function closeNavbar() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    
 </body>
 </html>
