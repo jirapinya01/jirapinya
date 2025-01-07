@@ -36,18 +36,19 @@ body {
 .navbar .icon {
     font-size: 20x;
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
     border: none;
     margin-left: 20px;
-    color: #4B4F53;
+    color: #e7e6e6;
 }
 
 .navbar {
+    
     display: flex;
     overflow: hidden;
-    background-color: #ffffff;
-    padding: 10px;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 1);
+    background-color: #0078D7;
+    
+    box-shadow: 0 0 2px 1px rgb(190, 190, 190);
 }
 
 
