@@ -4,38 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
-    <style> 
-      body {
-        font-family: 'Arial', sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background-color: #f9f9f9;
-        padding: 0 20px;
-    }
-
-    /* ปุ่ม */
-    .btn-next {
-    display: inline-block;
-    background-color: #0078D7;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-    float: right; /* ลอยปุ่มไปทางขวา */
-}
-
-.btn-next:hover {
-    background-color: #005bb5;
-}
-
-    </style>
+    <link rel="stylesheet" href="base.css">
 </head>
 <body>
-    <div class="content">
+    <header>
+        <div>FuncPython</div>
+        
+    </header>
+    <div class="sidebar">
+        <a href="#">Dashboard</a>
+        <a href="#">Settings</a>
+        <a href="#">Messages</a>
+    </div>
+
+    <div class="main-content">
         <h1>1. ฟังก์ชันคืออะไร?</h1>
         <a>
             ฟังก์ชัน (Function) ใน Python คือกลุ่มของคำสั่งหรือโค้ดที่รวมตัวกันเพื่อทำงานเฉพาะเจาะจง การเขียนฟังก์ชันช่วยให้โค้ดมีความเป็นระเบียบ อ่านง่าย และสามารถนำกลับมาใช้ใหม่ได้ นอกจากนี้ ยังช่วยลดความซ้ำซ้อนในโค้ดและทำให้การดีบักหรือแก้ไขโค้ดทำได้ง่ายขึ้น
