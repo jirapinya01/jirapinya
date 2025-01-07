@@ -7,14 +7,30 @@
     <link rel="stylesheet" href="base.css">
 </head>
 <body>
-    <header>
-        <div>FuncPython</div>
-        
-    </header>
-    <div class="sidebar">
-        <a href="#">Dashboard</a>
-        <a href="#">Settings</a>
-        <a href="#">Messages</a>
+    <div class="navbar">
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+            &#9776;
+        </a>
+    </div>
+
+    <!-- Slide Bar -->
+    <div id="mySidenav" class="sidenav">
+        <!-- Close Button for Slide Bar -->
+        <a href="javascript:void(0);" class="closebtn" onclick="closeNavbar()">
+            &times;
+        </a>
+
+        <hr>
+        <a href="#" onclick="toggleSubmenu()">หน้าหลัก</a>
+    <div id="submenu" class="submenu">
+        <a href="/dashboard">DashBoard</a>
+        <a href="/home">เพิ่ม</a>
+        <a href="/index_Admin">ตัวเลือกย่อย 3</a>
+    </div>
+        <a href="/">เพิ่มเมนูอาหาร</a>
+        <a href="/table">หน้าร้าน</a>
+        <a href="/settings">ตั้งค่า</a>
+        <hr>
     </div>
 
     <div class="main-content">
@@ -51,5 +67,25 @@
         
     </div>
    
+    <script>
+        function toggleNavbar() {
+            var sidenav = document.getElementById("mySidenav");
+            if (sidenav.style.width === "250px") {
+                sidenav.style.width = "0";
+            } else {
+                sidenav.style.width = "250px";
+            }
+        }
+        
+            function toggleSubmenu() {
+                var submenu = document.getElementById("submenu");
+                submenu.style.display = (submenu.style.display === "none" || submenu.style.display === "") ? "block" : "none";
+            }
+
+
+        function closeNavbar() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>
