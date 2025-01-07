@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="base.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200&display=swap" rel="stylesheet">
     <style>
-         .background-video {
+        .background-video {
             position: absolute;
             top: 0;
             left: 0;
@@ -16,7 +16,6 @@
             object-fit: cover;
             z-index: -1;
         }
-
     </style>
 </head>
 <body>
@@ -43,43 +42,19 @@
     </div>
   
     </div>
-    <video class="background-video" id="backgroundVideo" autoplay muted>
-        <source src="/static/image/1.mp4" type="video/mp4">
+    
+    <!-- Background Video -->
+    <video class="background-video" id="backgroundVideo" autoplay muted loop>
+        <source src="static/image/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
     </video>
     
-    
     <div class="main-content">
-        <h1>1. ฟังก์ชันคืออะไร?</h1>
-        <a>
-            ฟังก์ชัน (Function) ใน Python คือกลุ่มของคำสั่งหรือโค้ดที่รวมตัวกันเพื่อทำงานเฉพาะเจาะจง การเขียนฟังก์ชันช่วยให้โค้ดมีความเป็นระเบียบ อ่านง่าย และสามารถนำกลับมาใช้ใหม่ได้ นอกจากนี้ ยังช่วยลดความซ้ำซ้อนในโค้ดและทำให้การดีบักหรือแก้ไขโค้ดทำได้ง่ายขึ้น
-            <br><br>
-            ฟังก์ชันใน Python มีสองรูปแบบหลัก:
-            <br><br>
-            ฟังก์ชันที่สร้างโดยผู้ใช้ - ผู้พัฒนาสามารถกำหนดฟังก์ชันเองได้เพื่อให้เหมาะสมกับความต้องการของโปรแกรม
-            <br><br>
-            ฟังก์ชันที่มีอยู่แล้วใน Python - เช่น print(), len(), range() เป็นต้น
-            <br><br>
-            ประโยชน์ของฟังก์ชัน
-            <br><br>
-            การใช้ซ้ำ (Reuse): สามารถเรียกใช้งานได้หลายครั้ง โดยไม่ต้องเขียนโค้ดเดิมซ้ำ
-            <br><br>
-            โครงสร้างชัดเจน: ช่วยจัดระเบียบโค้ดให้ดูง่ายขึ้น
-            <br><br>
-            ลดความซับซ้อน: ช่วยแยกส่วนการทำงานในโปรแกรมให้เป็นโมดูลเล็กๆ
-            <br><br>
-            เพิ่มความยืดหยุ่น: สามารถรับค่าที่แตกต่างกันและคืนค่าที่ต่างกันได้
-            <br><br>
-            ตัวอย่างในชีวิตจริง
-            <br><br>
-            การกดปุ่ม "ปริ้นเอกสาร" บนคอมพิวเตอร์ คือการเรียกใช้ฟังก์ชันที่ทำหน้าที่ปริ้นเอกสาร
-            <br><br>
-            การใช้แอปพลิเคชันสั่งอาหาร ฟังก์ชันจะถูกเรียกเพื่อคำนวณราคาอาหาร รวมภาษีและค่าจัดส่ง
-            <br><br>
-            ใน Python การสร้างและใช้งานฟังก์ชันเป็นพื้นฐานที่สำคัญสำหรับการเขียนโปรแกรมทั้งขนาดเล็กและใหญ่
-   
-        </a><br>
+     
+           
         <a href="1.html" class="btn-next">เริ่มบทเรียน</a>
     </div>
+
     <script>
         function toggleNavbar() {
             var sidenav = document.getElementById("mySidenav");
@@ -90,48 +65,14 @@
             }
         }
         
-            function toggleSubmenu() {
-                var submenu = document.getElementById("submenu");
-                submenu.style.display = (submenu.style.display === "none" || submenu.style.display === "") ? "block" : "none";
-            }
-
+        function toggleSubmenu() {
+            var submenu = document.getElementById("submenu");
+            submenu.style.display = (submenu.style.display === "none" || submenu.style.display === "") ? "block" : "none";
+        }
 
         function closeNavbar() {
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>
-
-
-
-<script>
-const videos = [
-    "static/image/vdo1.mp4",
-    "static/image/vdo2.mp4",
-    "static/image/vdo3.mp4"
-];
-
-let currentVideoIndex = 0;
-const videoElement = document.getElementById('backgroundVideo');
-
-function loadNextVideo() {
-    videoElement.src = videos[currentVideoIndex];
-    videoElement.play().catch(error => {
-        console.error('Playback failed:', error);
-    });
-}
-
-videoElement.addEventListener('ended', function() {
-    currentVideoIndex = (currentVideoIndex + 1) % videos.length;
-    loadNextVideo();
-});
-
-videoElement.addEventListener('error', function() {
-    console.error('Cannot load video:', videos[currentVideoIndex]);
-});
-
-// เริ่มเล่นวิดีโอแรก
-loadNextVideo();
-</script>
-
 </body>
 </html>
