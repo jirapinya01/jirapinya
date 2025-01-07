@@ -12,31 +12,28 @@
             padding: 0;
             display: flex; 
             background-color: #f0f0f0;
-            font-family: 'Prompt', sans-serif;
+
         }
 
-        .main-content {
-         
-            text-align: center;
-            margin: 20px 0;
-            font-size: 1.2rem;
-            color: #333;
-        }
+       
 
         code {
             background-color: #282c34;
             color: #61dafb;
             font-family: 'Fira Code', monospace;
             font-size: 1.1rem;
-           margin-left: 20%  ;
-            width:500px;
-            height: 200px;
-            padding: 8px 12px;
+           margin: 15%;
+            width:70%;
+            height: 20%;
+            padding: 12px 16px;
             border-radius: 6px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             margin-top: 20px;
         }
 
+        p{
+            margin-left: 25px;
+        }
     </style>
 </head>
 <body>
@@ -66,12 +63,28 @@
     </div>
     
     <div class="main-content">
-      <>การสร้างฟังก์ชันใน Python
-Python ใช้คีย์เวิร์ด def ในการสร้างฟังก์ชัน
-โครงสร้างการสร้างฟังก์ชัน
-
+        <h1>2. การสร้างฟังก์ชันใน Python</h1>
+      <a>การสร้างฟังก์ชันใน Python ใช้คำสั่ง def ซึ่งเป็นคีย์เวิร์ดสำหรับนิยามฟังก์ชัน โดยฟังก์ชันที่เราสร้างจะมีชื่อเรียกและสามารถรับพารามิเตอร์ (ข้อมูลที่ส่งเข้าไปในฟังก์ชัน) ได้ตามต้องการ</a>
+     <br><b>def</b><a> คีย์เวิร์ดที่ใช้เริ่มต้นการสร้างฟังก์ชัน</a>
+     <br><b>ชื่อฟังก์ชัน</b><a> ตั้งชื่อฟังก์ชันให้สื่อถึงการทำงาน (ใช้ตัวอักษรภาษาอังกฤษและ _ ได้)</a>
+        
+     <br> <b>พารามิเตอร์</b><a>   ตัวเลือก (optional) ใช้ส่งข้อมูลเข้าไปในฟังก์ชันเพื่อประมวลผล</a>
+        
+     <br><b>return</b><a> ใช้ส่งค่ากลับจากฟังก์ชัน (ถ้ามี)</a>
     </div>
+    <code>def ชื่อฟังก์ชัน(พารามิเตอร์):
+        # คำสั่งในฟังก์ชัน
+        return ค่าที่จะส่งกลับ (ถ้ามี)</code>
+   <p>ตัวอย่างเช่น</p>
+  <code>def say_hello():
+    print("สวัสดี")</code>
+    <p>การเรียกใช้</p>
+    <code>say_hello()  # Output: สวัสดี</code>
+    <div class="button-content">
+    <a href="1.html" class="btn-prev">ย้อนกลับ</a>
+    <a href="3.html" class="btn-next">หน้าถัดไป</a>
    
+    </div>
 
     <script>
         function toggleNavbar() {
