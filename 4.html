@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำถามท้ายบท</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .question p {
+            margin: 0 0 10px;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #282c34;
+    color: #61dafb;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 90%;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+            &#9776;
+        </a>
+    </div>
+
+    
+    <div id="mySidenav" class="sidenav">
+        
+        <a href="javascript:void(0);" class="closebtn" onclick="closeNavbar()">
+            &times;
+        </a>
+
+        <hr>
+        
+    <div id="submenu" class="submenu">
+        <a href="index.html">หน้าแรก</a>
+        <a href="1.html">บทเรียนที่ 1</a>
+        <a href="2.html">บทเรียนที่ 2</a>
+        <a href="3.html">บทเรียนที่ 3</a>
+        <a href="4.html">บทเรียนที่ 4</a>
+    </div>
+  
+    </div>
+    <div class="main-content">
+    <h1>Python Function Quiz</h1>
+
+    <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="question">
+            <p>1. ฟังก์ชัน (Function) ใน Python คืออะไร?</p>
+            <label><input type="radio" name="q1" value="1"> เป็นโครงสร้างที่ใช้เก็บข้อมูลในรูปแบบลำดับ</label><br>
+            <label><input type="radio" name="q1" value="2"> เป็นคำสั่งที่ใช้ในการแสดงผลข้อความ</label><br>
+            <label><input type="radio" name="q1" value="3"> เป็นกลุ่มของคำสั่งที่ถูกกำหนดให้ทำงานเฉพาะเจาะจง</label><br>
+            <label><input type="radio" name="q1" value="4"> เป็นตัวแปรชนิดหนึ่งที่ใช้เก็บค่า</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <p>2. คำสั่งใดใช้ในการสร้างฟังก์ชันใน Python?</p>
+            <label><input type="radio" name="q2" value="1"> function</label><br>
+            <label><input type="radio" name="q2" value="2"> def</label><br>
+            <label><input type="radio" name="q2" value="3"> create</label><br>
+            <label><input type="radio" name="q2" value="4"> lambda</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <p>3. ใน Python คำว่า "อากิวเมนต์" (Argument) หมายถึงอะไร?</p>
+            <label><input type="radio" name="q3" value="1"> ตัวแปรที่ถูกส่งเข้าไปในฟังก์ชัน</label><br>
+            <label><input type="radio" name="q3" value="2"> ชื่อของฟังก์ชัน</label><br>
+            <label><input type="radio" name="q3" value="3"> คำสั่งที่ใช้ในการเรียกฟังก์ชัน</label><br>
+            <label><input type="radio" name="q3" value="4"> ผลลัพธ์ที่ได้จากฟังก์ชัน</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <p>4. ฟังก์ชันต่อไปนี้จะคืนค่าอะไร?<br>
+            <code>def add_numbers(a, b): return a + b</code><br>
+            <code>result = add_numbers(3, 5)</code><br>
+            <code>print(result)</code></p>
+            <label><input type="radio" name="q4" value="1"> 8</label><br>
+            <label><input type="radio" name="q4" value="2"> 35</label><br>
+            <label><input type="radio" name="q4" value="3"> 3 + 5</label><br>
+            <label><input type="radio" name="q4" value="4"> ไม่มีค่าใดเลย</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <p>5. ข้อใดต่อไปนี้เป็นฟังก์ชันที่ถูกต้องใน Python?</p>
+            <label><input type="radio" name="q5" value="1"> <code>def greet(name) print(f"Hello, {name}")</code></label>
+            <label><input type="radio" name="q5" value="2"> <code>def greet(name): print(f"Hello, {name}")</code></label>
+            <label><input type="radio" name="q5" value="3"> <code>function greet(name): print(f"Hello, {name}")</code></label>
+            <label><input type="radio" name="q5" value="4"> <code>def greet(name): return "Hello" + name</code></label>
+        </div>
+
+        <button type="button" onclick="submitQuiz()">ส่งคำตอบ</button>
+    </form>
+
+    <div id="result" class="result"></div>
+     
+        </div>
+
+    <script>
+        const correctAnswers = {
+            q1: "3",
+            q2: "2",
+            q3: "1",
+            q4: "1",
+            q5: "2"
+        };
+
+        function submitQuiz() {
+            let score = 0;
+            let totalQuestions = Object.keys(correctAnswers).length;
+
+            // Check answers
+            for (let question in correctAnswers) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                if (selected && selected.value === correctAnswers[question]) {
+                    score++;
+                }
+            }
+
+            // Display result
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = `คุณได้คะแนน ${score} จาก ${totalQuestions}`;
+
+            if (score < 4) {
+                resultDiv.innerHTML += "<br>คุณไม่ผ่าน";
+            } else {
+                resultDiv.innerHTML += "<br>ยินดีด้วย คุณผ่านแล้ว!";
+            }
+        }
+    </script>
+</body>
+</html>
