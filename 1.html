@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
     <link rel="stylesheet" href="base.css">
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200&display=swap" rel="stylesheet">
   
 </head>
 <body>
@@ -15,16 +14,16 @@
         </a>
     </div>
 
-    <!-- Slide Bar -->
-    <div id="mySidenav" class="sidenav">
-        <!-- Close Button for Slide Bar -->
+ 
+    <div id="mySidenav" class="sidenav"> <!-- Close Button for Slide Bar -->
         <a href="javascript:void(0);" class="closebtn" onclick="closeNavbar()">
             &times;
         </a>
 
         <hr>
-        <a href="#" onclick="toggleSubmenu()">หน้าหลัก</a>
+        
     <div id="submenu" class="submenu">
+        <a href="index.html">หน้าแรก</a>
         <a href="1.html">บทเรียนที่ 1</a>
         <a href="2.html">บทเรียนที่ 2</a>
         <a href="3.html">บทเรียนที่ 3</a>
@@ -63,7 +62,13 @@
             ใน Python การสร้างและใช้งานฟังก์ชันเป็นพื้นฐานที่สำคัญสำหรับการเขียนโปรแกรมทั้งขนาดเล็กและใหญ่
    
         </a><br>
+        </div>
+        <div class="button-content">
+        <a href="index.html" class="btn-prev">ย้อนกลับ</a>
         <a href="2.html" class="btn-next">หน้าถัดไป</a>
+       </div> 
+       
+
     </div>
     <script>
         function toggleNavbar() {
