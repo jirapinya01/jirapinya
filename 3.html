@@ -68,40 +68,38 @@
     </div>
     <div class="main-content">
         <h1>3. การใช้พารามิเตอร์ในฟังก์ชัน</h1>
-      <a>พารามิเตอร์ (Parameter) คือค่าที่ส่งเข้าไปในฟังก์ชันเพื่อใช้ในกระบวนการประมวลผล ฟังก์ชันสามารถรับค่าพารามิเตอร์ได้หลายแบบเพื่อเพิ่มความยืดหยุ่น</a>
+        <p>พารามิเตอร์ (Parameter) คือค่าที่ส่งเข้าไปในฟังก์ชันเพื่อใช้ในกระบวนการประมวลผล ฟังก์ชันสามารถรับค่าพารามิเตอร์ได้หลายแบบเพื่อเพิ่มความยืดหยุ่น</p>
+    </div>
     
-    </div>
     <p>ฟังก์ชันที่มีพารามิเตอร์เดียว</p>
-    <code>def greet(name):
-        print(f"สวัสดี, {name}!")   
+    <code>def greet(name):  
+        print(f"สวัสดี, {name}!")  
     greet("สมชาย")  # Output: สวัสดี, สมชาย!</code>
-
+    
     <div class="main-content">
-       
-      <a>ในตัวอย่างนี้ ฟังก์ชัน greet รับค่าพารามิเตอร์ name และใช้ค่านั้นในคำสั่ง print เพื่อพิมพ์ข้อความทักทาย</a>
+        <p>ในตัวอย่างนี้ ฟังก์ชัน greet รับค่าพารามิเตอร์ name และใช้ค่านั้นในคำสั่ง print เพื่อพิมพ์ข้อความทักทาย</p>
     </div>
-
-
-   <p>ฟังก์ชันที่มีหลายพารามิเตอร์</p>
-  <code>def greet(name):
-    print(f"สวัสดี, {name}!")
-greet("สมชาย")  # Output: สวัสดี, สมชาย!</code>
-<div class="main-content">
-       
-    <a>ในตัวอย่างนี้ ฟังก์ชัน calculate_area รับค่าพารามิเตอร์สองตัวคือ width และ height คูณค่าทั้งสองแล้วส่งกลับผลลัพธ์</a>
-  </div>
-
+    
+    <p>ฟังก์ชันที่มีหลายพารามิเตอร์</p>
+    <code>def greet(name):  
+        print(f"สวัสดี, {name}!")  
+    greet("สมชาย")  # Output: สวัสดี, สมชาย!</code>
+    <div class="main-content">
+        <p>ในตัวอย่างนี้ ฟังก์ชัน calculate_area รับค่าพารามิเตอร์สองตัวคือ width และ height คูณค่าทั้งสองแล้วส่งกลับผลลัพธ์</p>
+    </div>
+    
     <p>การส่งค่าพารามิเตอร์แบบกำหนดตำแหน่ง (Positional Arguments)</p>
-    <code>def calculate_area(width, height):
+    <code>def calculate_area(width, height):  
         return width * height
     
-    area = calculate_area(5, 10)
+    area = calculate_area(5, 10)  
     print(f"พื้นที่: {area}")  # Output: พื้นที่: 50</code>
+    
     <div class="button-content">
-    <a href="2.html" class="btn-prev">ย้อนกลับ</a>
-    <a href="4.html" class="btn-next">หน้าถัดไป</a>
-   
+        <a href="2.html" class="btn-prev">ย้อนกลับ</a>
+        <a href="4.html" class="btn-next">หน้าถัดไป</a>
     </div>
+    
 
     <script>
         function toggleNavbar() {
