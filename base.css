@@ -117,7 +117,7 @@ footer {
 .btn-next {
     display: inline-block;
     background-color: #0078D7;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -125,17 +125,16 @@ footer {
     text-align: center;
     margin-top: 20px;
     transition: background-color 0.3s ease;
-    
 }
 
 .btn-next:hover {
-    background-color: #005bb5;
+    background-color: #003e7e; /* Slightly darker hover color */
 }
 
 .btn-prev {
     display: inline-block;
     background-color: #0078D7;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -146,8 +145,9 @@ footer {
 }
 
 .btn-prev:hover {
-    background-color: #005bb5;
+    background-color: #003e7e; /* Slightly darker hover color */
 }
+
 
 .button-content {
     margin: 25px;      
