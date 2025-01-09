@@ -89,6 +89,7 @@ body {
     display: block;
     transition: 0s;
     text-align: center;
+   
 }
 
 .sidenav .closebtn {
@@ -97,6 +98,8 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    background: none;
+   
 }
 
 
@@ -164,3 +167,6 @@ footer {
     font-size: 1.2rem;
     color: #333;
 }
+ button{
+    box-shadow: none;
+ }
